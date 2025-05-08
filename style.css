@@ -1,41 +1,29 @@
-/* Reset */
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
     font-family: Arial, sans-serif;
     background: #000;
-    color: #fff;
   }
   
-  /* Topbar */
   .topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #111;
     padding: 10px 20px;
-    flex-wrap: wrap;
   }
   
   .logo img {
     height: 140px;
   }
   
-  /* Search bar */
   .search-container {
     display: flex;
     align-items: center;
-    background: #fff;
+    background: #e4e4e4;
     border-radius: 20px;
     overflow: hidden;
     padding: 0 10px;
     width: 300px;
-    max-width: 100%;
-    margin: 10px;
   }
   
   .search-container input {
@@ -52,32 +40,27 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
-  /* Profile icon */
   .profile {
-    margin-left: 20px;
-    cursor: pointer;
+    margin-left: 0px; /* empurra ele um pouco pra esquerda */
+    cursor: pointer;   /* mostra o cursor de clique */
   }
-  
   .profile img {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgb(219, 219, 219);
   }
   
-  /* Menu */
   .menu {
     display: flex;
     justify-content: center;
     background-color: #0b0b0b;
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
-    flex-wrap: wrap;
   }
   
   .menu a {
-    color: #fff;
+    color: #dfdede;
     padding: 15px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -87,46 +70,7 @@
   .menu a:hover {
     background-color: #222;
   }
-  
-  /* ===== Responsivo ===== */
-  
-  /* Tablet */
-  @media (max-width: 1024px) {
-    .topbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .search-container {
-      width: 80%;
-      margin: 10px 0;
-    }
-  
-    .profile {
-      margin: 10px 0;
-    }
-  }
-  
-  /* Celular */
-  @media (max-width: 767px) {
-    .menu {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .menu a {
-      display: block;
-      padding: 12px;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .search-container {
-      width: 90%;
-    }
-  
-    .profile {
-      margin-left: 0;
-    }
-  }
-  
+
+    .outdoor1 img{
+        height: 735px;  
+}
