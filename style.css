@@ -1,76 +1,134 @@
+/* Corpo */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #000;
-  }
-  
-  .topbar {
+}
+
+/* Topbar */
+.topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #111;
     padding: 10px 20px;
-  }
-  
-  .logo img {
-    height: 140px;
-  }
-  
-  .search-container {
+    flex-wrap: wrap; /* Permite que os itens se movam em telas pequenas */
+}
+
+.logo img {
+    height: auto;
+    max-height: 140px;
+    width: auto;
+}
+
+/* Barra de busca */
+.search-container {
     display: flex;
     align-items: center;
     background: #e4e4e4;
     border-radius: 20px;
     overflow: hidden;
     padding: 0 10px;
-    width: 300px;
-  }
-  
-  .search-container input {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.search-container input {
     border: none;
     outline: none;
     padding: 8px;
     flex: 1;
     font-size: 14px;
-  }
-  
-  .search-container button {
+}
+
+.search-container button {
     background: none;
     border: none;
     font-size: 16px;
     cursor: pointer;
-  }
-  .profile {
-    margin-left: 0px; /* empurra ele um pouco pra esquerda */
-    cursor: pointer;   /* mostra o cursor de clique */
-  }
-  .profile img {
+}
+
+/* Perfil */
+.profile {
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.profile img {
     height: 35px;
     width: 35px;
     border-radius: 50%;
     background-color: rgb(219, 219, 219);
-  }
-  
-  .menu {
+}
+
+/* Menu */
+.menu {
     display: flex;
     justify-content: center;
     background-color: #0b0b0b;
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
-  }
-  
-  .menu a {
+    flex-wrap: wrap; /* Permite que os itens se movam em telas pequenas */
+}
+
+.menu a {
     color: #dfdede;
     padding: 15px 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-  }
-  
-  .menu a:hover {
-    background-color: #222;
-  }
+}
 
-    .outdoor1 img{
-        height: 735px;  
+.menu a:hover {
+    background-color: #222;
+}
+
+/* Imagem Outdoor */
+.outdoor1 img {
+    width: 100%; /* Faz a imagem se ajustar ao tamanho da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 735px;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu a {
+        padding: 12px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100%;
+        max-height: 120px;
+    }
+}
+
+/* Responsividade extra para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    .profile img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .search-container input {
+        font-size: 12px;
+    }
 }
