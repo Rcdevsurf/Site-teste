@@ -66,7 +66,7 @@ body {
 .menu {
     display: flex;
     justify-content: center;
-    background-color: #0b0b0b;
+    background-color: #010108;
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
     flex-wrap: wrap; /* Permite que os itens se movam em telas pequenas */
@@ -131,4 +131,96 @@ body {
     .search-container input {
         font-size: 12px;
     }
+}
+/* Estilo base do menu */
+.menu {
+  background-color: #0c0c0c;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu > ul > li > a {
+  display: block;
+  padding: 16px 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu > ul > li > a:hover {
+  color: #cfcfcf;
+}
+
+/* Mega menu */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  z-index: 999;
+  width: max-content;
+  border-top: 2px solid #444;
+}
+
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+
+/* Colunas do menu */
+.mega-menu .column {
+  min-width: 160px;
+}
+
+.mega-menu h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.mega-menu a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.mega-menu a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.mega-menu {
+  display: none; /* escondido por padrão */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 20px;
+  gap: 40px;
+  z-index: 999;
+  border-top: 2px solid #444;
+  width: max-content;
+  flex-direction: row; /* força coluna lado a lado */
+}
+
+/* Mostrar ao passar o mouse no pai */
+.dropdown:hover .mega-menu {
+  display: flex;
 }
