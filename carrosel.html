@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrossel de Marcas</title>
+
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="styless.css" />
+</head>
+<body>
+  <div class="carrossel-marcas">
+    <h2>Compre por marca</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="logos/nike.png" alt="Nike" /></div>
+        <div class="swiper-slide"><img src="logos/jordan.png" alt="Jordan" /></div>
+        <div class="swiper-slide"><img src="logos/adidas.png" alt="Adidas" /></div>
+        <div class="swiper-slide"><img src="logos/vans.png" alt="Vans" /></div>
+        <div class="swiper-slide"><img src="logos/puma.png" alt="Puma" /></div>
+        <div class="swiper-slide"><img src="logos/newbalance.png" alt="New Balance" /></div>
+        <div class="swiper-slide"><img src="logos/converse.png" alt="Converse" /></div>
+        <div class="swiper-slide"><img src="logos/newera.png" alt="New Era" /></div>
+      </div>
+
+      <!-- Setas de navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Script de inicialização -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: { slidesPerView: 2 },
+        640: { slidesPerView: 3 },
+        1024: { slidesPerView: 5 },
+      }
+    });
+  </script>
+</body>
+</html>

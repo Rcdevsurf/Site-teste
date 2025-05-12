@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RC Store</title>
   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="Logo em PDF RC Store (2).png" type="image/x-icon">
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="carroselmarcas.css" />
 </head>
 <body>
   <header class="topbar">
@@ -79,7 +87,7 @@
 
     <li><a href="#">PROMOÇÕES</a></li>
     <li><a href="#">CONTATOS</a></li>
-    <li><a href="#">SOBRE NÓS</a></li>
+    <li><a href="Sobrenos.html">SOBRE NÓS</a></li>
   </ul>
 </nav>
   <section class="container">
@@ -142,5 +150,56 @@
 
   <!-- Adicione mais produtos aqui -->
 </div>
+ <div class="destaques">
+    <h2>Novidades</h2>
+  </div>
+   <div class="container">
+    <div class="card">
+      <img src="fotos novidades/HYAC01046902.00_01.jpg" alt="New Balance">
+      <div class="card-text">
+        <div class="card-title">Boné Hurley</div>
+        <div class="card-subtitle">Coleção Hurley</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="fotos novidades/Q911A0341-Red-2.jpg" alt="Tricô">
+      <div class="card-text">
+        <div class="card-title">Boné QuikSilver Emb Square</div>
+        <div class="card-subtitle">Coleção QuikSilver</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="fotos novidades/Q911A0342-Navy-1.jpg" alt="Air Force">
+      <div class="card-text">
+        <div class="card-title">Boné QuikSilver </div>
+        <div class="card-subtitle">Street Style</div>
+      </div>
+      </div>
+    </div>
+    <!--carrocel marcas --> >
+      <div class="carrossel-marcas">
+    <h2>Compre por marca</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="logos/nike.png" alt="Nike" /></div>
+        <div class="swiper-slide"><img src="logos/jordan.png" alt="Jordan" /></div>
+        <div class="swiper-slide"><img src="logos/adidas.png" alt="Adidas" /></div>
+        <div class="swiper-slide"><img src="logos/vans.png" alt="Vans" /></div>
+        <div class="swiper-slide"><img src="logos/puma.png" alt="Puma" /></div>
+        <div class="swiper-slide"><img src="logos/newbalance.png" alt="New Balance" /></div>
+        <div class="swiper-slide"><img src="logos/converse.png" alt="Converse" /></div>
+        <div class="swiper-slide"><img src="logos/newera.png" alt="New Era" /></div>
+      </div>
+
+      <!-- Setas de navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="carroselmarcas.js"></script>
 </body>
 </html>

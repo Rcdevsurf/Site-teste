@@ -356,3 +356,190 @@ h2 {
   font-size: 0.85rem;
   color: #ccc;
 }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212; /* Preto */
+      color: #e0e0e0; /* Cinza claro */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #1e1e1e; /* Cinza escuro */
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-text {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: #bbbbbb;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212; /* Preto */
+      color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: left;
+      margin-bottom: 30px;
+      color: #bde0fe;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background-color: #d4d4d4; /* fundo claro para destacar produto */
+    }
+
+    .card-text {
+      background-color: #1e1e1e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+    }
+     * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: left;
+      margin-bottom: 30px;
+      color: #bde0fe;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 300px;
+      max-width: 100%;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background-color: #d4d4d4;
+    }
+
+    .card-text {
+      background-color: #1e1e1e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .card-subtitle {
+      font-size: 0.95rem;
+      color: #b0b0b0;
+    }
+    
