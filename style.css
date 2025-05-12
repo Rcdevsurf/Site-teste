@@ -70,7 +70,7 @@ body {
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
     flex-wrap: wrap; /* Permite que os itens se movam em telas pequenas */
-}
+} 
 
 .menu a {
     color: #dfdede;
@@ -202,6 +202,7 @@ body {
   color: white;
   text-decoration: underline;
 }
+/*Slider*/
 .container{
     padding: 2rem;
 }
@@ -242,4 +243,116 @@ body {
 }
 .slidenav a:hover{
     opacity: 1;
+}
+.destaques{
+     color: #dfdede;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #e0e0e0;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.produto {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  min-width: 200px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+}
+
+.nome {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.preco {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+.parcelamento {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #e0e0e0;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.produto {
+  position: relative;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 320px; /* Tamanho fixo para manter o layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+  .produto img {
+  width: 100%;
+  height: 160px; /* Altura fixa da imagem */
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  }
+
+  .nome {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.preco {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+.parcelamento {
+  font-size: 0.85rem;
+  color: #ccc;
 }
