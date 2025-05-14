@@ -1,86 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RC Store</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="Logo em PDF RC Store (2).png" type="image/x-icon">
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="carroselmarcas.css" />
 </head>
 <body>
-
   <header class="topbar">
     <div class="logo">
-      <a href=""><img src="certo.png" alt="RC Store Logo"></a>
+      <a href="">
+        <img src="certo.png" alt="RC Store Logo">
+        </a>
     </div>
     <div class="search-container">
       <input type="text" placeholder="Pesquisar...">
       <button><span>&#128269;</span></button>
     </div>
     <a href="login.html" class="profile">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" alt="Perfil">
-    </a>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" alt="Perfil">
+      </a>
   </header>
+ <!-- HTML: Menu principal -->
+<nav class="menu">
+  <ul>
+    <li><a href="#">NOVIDADES</a></li>
 
-  <nav class="menu">
-    <ul>
-      <li><a href="#">NOVIDADES</a></li>
-      <li class="dropdown">
-        <a href="#">PRODUTOS</a>
-        <div class="mega-menu">
-          <div class="column">
-            <h4>MASCULINO</h4>
-            <a href="#">Camisetas</a>
-            <a href="#">Shorts</a>
-            <a href="#">Calças</a>
-            <a href="#">Jaquetas</a>
-          </div>
-          <div class="column">
-            <h4>FEMININO</h4>
-            <a href="#">Vestidos</a>
-            <a href="#">Saias</a>
-            <a href="#">Calças</a>
-            <a href="#">Moletons</a>
-          </div>
-          <div class="column">
-            <h4>ACESSÓRIOS</h4>
-            <a href="#">Bonés</a>
-            <a href="#">Meias</a>
-            <a href="#">Mochilas</a>
-          </div>
+    <li class="dropdown">
+      <a href="#">PRODUTOS</a>
+      <div class="mega-menu">
+        <div class="column">
+          <h4>MASCULINO</h4>
+          <a href="#">Camisetas</a>
+          <a href="#">Shorts</a>
+          <a href="#">Calças</a>
+          <a href="#">Jaquetas</a>
         </div>
-      </li>
-      <li class="dropdown">
-        <a href="#">MARCAS</a>
-        <div class="mega-menu">
-          <div class="column">
-            <h4>POPULARES</h4>
-            <a href="#">QuikSilver</a>
-            <a href="#">Hurley</a>
-            <a href="#">Element</a>
-            <a href="#">Ruf</a>
-            <a href="#">Roxy</a>
-            <a href="#">Hocks</a>
-          </div>
-          <div class="column">
-            <a href="#">Billa Bong</a>
-            <a href="#">Dahui</a>
-            <a href="#">Volcom</a>
-            <a href="#">RVCA</a>
-            <a href="#">Hang Loose</a>
-            <a href="#">Tricats</a>
-            <a href="#">Huntington</a>
-          </div>
+        <div class="column">
+          <h4>FEMININO</h4>
+          <a href="#">Vestidos</a>
+          <a href="#">Saias</a>
+          <a href="#">Calças</a>
+          <a href="#">Moletons</a>
         </div>
-      </li>
-      <li><a href="#">PROMOÇÕES</a></li>
-      <li><a href="#">CONTATOS</a></li>
-      <li><a href="Sobrenos.html">SOBRE NÓS</a></li>
-    </ul>
-  </nav>
+        <div class="column">
+          <h4>ACESSÓRIOS</h4>
+          <a href="#">Bonés</a>
+          <a href="#">Meias</a>
+          <a href="#">Mochilas</a>
+        </div>
+      </div>
+    </li>
 
+    <li class="dropdown">
+      <a href="#">MARCAS</a>
+      <div class="mega-menu">
+        <div class="column">
+          <h4>POPULARES</h4>
+          <a href="#">QuikSilver</a>
+          <a href="#">Hurley</a>
+          <a href="#">Element</a>
+          <a href="#">Ruf</a>
+          <a href="#">Roxy</a>
+          <a href="#">Hocks</a>
+        </div>
+        <div class="column">
+          <a href="#">Billa Bong</a>
+          <a href="#">Dahui</a>
+          <a href="#">Volcom</a>
+          <a href="#">RVCA</a>
+          <a href="#">Hang Loose</a>
+          <a href="#">Tricats</a>
+          <a href="#">Huntington</a>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#">PROMOÇÕES</a></li>
+    <li><a href="#">CONTATOS</a></li>
+    <li><a href="Sobrenos.html">SOBRE NÓS</a></li>
+  </ul>
+</nav>
+<!--slider-->
   <section class="container">
     <div class="slidewrapper">
       <div class="slider">
@@ -94,68 +102,89 @@
         <a href="#slide3"></a>
       </div>
     </div>
+<!--destaques-->
   </section>
   <script src="slider.js"></script>
-
-  <div class="destaques"><h2>Destaques</h2></div>
-  <div class="swiper destaque-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="produto">
-          <img src="fotosdo destaques/tenis-hocks-rlx-bag-brilhantejpg.jpg" alt="">
-          <div class="nome">Tênis Hocks Rlx Baggy</div>
-          <div class="preco">R$ 499,90 via PIX</div>
-          <div class="parcelamento">10x de R$ 49,90 sem juros</div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="produto">
-          <img src="fotosdo destaques/Sem título3.jpg" alt="">
-          <div class="nome">Tênis Hocks Rlx Baggy</div>
-          <div class="preco">R$ 499,90 via PIX</div>
-          <div class="parcelamento">10x de R$ 49,90 sem juros</div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="produto">
-          <img src="fotosdo destaques/tenis-hocks-rlx-baggy-asfalto.jpg" alt="">
-          <div class="nome">Tênis Hocks Rlx Baggy</div>
-          <div class="preco">R$ 499,90 via PIX</div>
-          <div class="parcelamento">10x de R$ 49,90 sem juros</div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  <div class="destaques">
+    <h2>Destaques</h2>
+  </div>
+  <div class="carrossel">
+  <div class="produto">
+   <a href="">
+    <img src="fotosdo destaques/tenis-hocks-rlx-bag-brilhantejpg.jpg" alt="Tênis 1">
+    <div class="nome">Tênis Hocks Rlx Baggy</div>
+    <div class="preco">R$ 499,90 via PIX</div>
+    </a>
+    <div class="parcelamento">10x de R$ 49,90 sem juros</div>
   </div>
 
-  <div class="destaques"><h2>Novidades</h2></div>
-  <div class="container">
+  <div class="produto">
+    <a href="">
+    <img src="fotosdo destaques/Sem título3.jpg" alt="Tênis 2">
+    <div class="nome">Tênis Hocks Rlx Baggy</div>
+    <div class="preco">R$ 499,90 via PIX</div>
+    </a>
+    <div class="parcelamento">10x de R$ 49,90 sem juros</div>
+  </div>
+
+   <div class="produto">
+    <a href="">
+    <img src="fotosdo destaques/tenis-hocks-rlx-baggy-asfalto.jpg" alt="Tênis 2">
+    <div class="nome">Tênis Hocks Rlx Baggy</div>
+    <div class="preco">R$ 499,90 via PIX</div>
+    </a>
+    <div class="parcelamento">10x de R$ 49,90 sem juros</div>
+  </div>
+
+   <div class="produto">
+    <a href="">
+    <img src="fotosdo destaques/tenis-hocks-rlx-baggy-poapetit.jpg" alt="Tênis 2">
+    <div class="nome">Tênis Hocks Rlx Baggy</div>
+    <div class="preco">R$ 499,90 via PIX</div>
+    </a>
+    <div class="parcelamento">10x de R$ 49,90 sem juros</div>
+  </div>
+
+  <!--Novidades-->
+</div>
+ <div class="destaques">
+    <h2>Novidades</h2>
+  </div>
+   <div class="container">
+    <a href="">
     <div class="card">
-      <img src="fotos novidades/HYAC01046902.00_01.jpg" alt="Boné Hurley">
+      <img src="fotos novidades/HYAC01046902.00_01.jpg" alt="New Balance">
       <div class="card-text">
         <div class="card-title">Boné Hurley</div>
         <div class="card-subtitle">Coleção Hurley</div>
       </div>
+      </a>
     </div>
+
     <div class="card">
-      <img src="fotos novidades/Q911A0341-Red-2.jpg" alt="Boné QuikSilver">
+      <a href="">
+      <img src="fotos novidades/Q911A0341-Red-2.jpg" alt="Tricô">
       <div class="card-text">
         <div class="card-title">Boné QuikSilver Emb Square</div>
         <div class="card-subtitle">Coleção QuikSilver</div>
       </div>
+      </a>
     </div>
+
     <div class="card">
-      <img src="fotos novidades/Q911A0342-Navy-1.jpg" alt="Boné QuikSilver Azul">
+      <a href="">
+      <img src="fotos novidades/Q911A0342-Navy-1.jpg" alt="Air Force">
       <div class="card-text">
-        <div class="card-title">Boné QuikSilver</div>
+        <div class="card-title">Boné QuikSilver </div>
         <div class="card-subtitle">Street Style</div>
       </div>
+      </a>
+      </div>
     </div>
-  </div>
-
-  <div class="carrossel-marcas">
+    <!--carrocel marcas --> 
+      <div class="carrossel-marcas">
     <h2>Compre por marca</h2>
+
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="logos/nike.png" alt="Nike" /></div>
@@ -167,18 +196,34 @@
         <div class="swiper-slide"><img src="logos/converse.png" alt="Converse" /></div>
         <div class="swiper-slide"><img src="logos/newera.png" alt="New Era" /></div>
       </div>
+
+      <!-- Setas de navegação -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="carroselmarcas.js"></script>
-
-  <div class="galeria">
+  <!--imagens-->
+    <div class="galeria">
     <img src="images (1).jpeg" alt="Tênis preto">
     <img src="images.jpeg" alt="Tênis empilhados">
   </div>
+  <section class="colecoes">
+  <h2>Confira as coleções</h2>
+  <div class="colecoes-carousel">
+    <button class="nav prev">&#10094;</button>
+    
+    <div class="carousel-track">
+      <img src="images (1).jpeg" alt="Coleção 1">
+      <img src="img/colecao2.jpg" alt="Coleção 2">
+      <img src="img/colecao3.jpg" alt="Coleção 3">
+      <img src="img/colecao4.jpg" alt="Coleção 4">
+      <img src="img/colecao5.jpg" alt="Coleção 5">
+    </div>
 
+    <button class="nav next">&#10095;</button>
+  </div>
+</section>
 </body>
 </html>

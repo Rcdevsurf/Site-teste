@@ -1,0 +1,329 @@
+/* ==========================
+   RESET E ESTILO GLOBAL
+========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #e0e0e0;
+}
+
+/* ==========================
+   TOPO E NAVEGAÇÃO
+========================== */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  max-height: 140px;
+  width: auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #e4e4e4;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgb(219, 219, 219);
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: #dfdede;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  background-color: #222;
+  color: #ccc;
+}
+
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 20px;
+  gap: 40px;
+  z-index: 999;
+  border-top: 2px solid #444;
+  flex-direction: row;
+  width: max-content;
+}
+
+.mega-menu .column {
+  min-width: 160px;
+}
+
+.mega-menu h4 {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.mega-menu a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.mega-menu a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ==========================
+   IMAGEM OUTDOOR
+========================== */
+.outdoor1 img {
+  width: 100%;
+  height: auto;
+  max-height: 735px;
+}
+
+/* ==========================
+   SLIDER
+========================== */
+.container {
+  padding: 2rem;
+}
+
+.slidewrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+}
+
+.slidenav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slidenav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slidenav a:hover {
+  opacity: 1;
+}
+
+/* ==========================
+   CARROSSEL DE PRODUTOS
+========================== */
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.produto {
+  position: relative;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.produto img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+}
+
+.nome {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.preco {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+.parcelamento {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* ==========================
+   GALERIA DE IMAGENS
+========================== */
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #121212;
+}
+
+.galeria img {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+@media screen and (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 100%;
+    max-height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .search-container input {
+    font-size: 12px;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+}
